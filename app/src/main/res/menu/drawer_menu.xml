@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_machines"
+            android:icon="@drawable/ic_machine"
+            android:title="Les machines" />
+        <item android:title="Statistiques">
+            <menu>
+                <item
+                    android:id="@+id/nav_chart_marque"
+                    android:icon="@drawable/ic_chart"
+                    android:title="Par marque "/>
+                <item
+                    android:id="@+id/nav_chart_year"
+                    android:icon="@drawable/ic_year"
+                    android:title="Par annee" />
+            </menu>
+        </item>
+    </group>
+
+
+    <item android:title="Connexion">
+        <menu>
+            <item
+                android:id="@+id/nav_log"
+                android:icon="@drawable/ic_login"
+                android:title="Connexion" />
+        </menu>
+    </item>
+
+</menu>
